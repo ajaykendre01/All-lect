@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+             box-sizing:border-box;
+        }
+        input.label{
+            display: block;
+            /* text-align: left; */
+        }
+        .form{
+            padding: 80px 20px;
+            margin: 30px 40px;
+           width: 70;
+           text-align: left;
+           border-radius: 30px;
+           background-color: blue;
+           
+        }
+        h1{
+            text-align: center;
+            font-family: cooper;
+            
+        }
+        label{
+            font-size: 20px;
+            display: block;
+            text-align: center;
+            
+         }
+         input{
+            width: 40%;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 15px;
+            display: block;
+         }
+input[type="submit"] {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+}
+
+body{
+    width: 100% 120%;
+    background-repeat: no-repeat;
+    height: 100pv;
+  background-size: 100% 100%;
+  background-image: url( data:image/jpeg;base64,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);
+}
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <form>
+        <div>
+
+            <h1> INSTRAGRAM LOGIN PAGE</h1>
+
+            <label for="Username"> Username</label>
+            <input type="text" name="Username" placeholder="  Enter Your Username">
+
+            <label for="Password"> Password</label>
+            <input type="password" name="Password" placeholder="Enter Your Password">
+            <input type="button" value="Login">
+        </div>
+    </form>
+    
+</body>
+</html>
